@@ -134,3 +134,17 @@ Include a very brief summary of your project here. Images are encouraged, along 
 
 ### Design/Evaluation Achievements
 - **Design Achievement 1**: I followed the following tips from the W3C Web Accessibility Initiative...
+
+File structure:
+
+a3-TienNguyen/
+├─ package.json
+├─ server.js             # Express server
+├─ public/               # All the "frontend"
+│  ├─ index.html         # Posts page (composer + feed)
+│  ├─ profile.html       # Profile page
+│  ├─ login.html         # Login page
+│  ├─ css/
+│  │  └─ style.css       # Your custom styles
+│  └─ js/
+│     └─ posts.js        # Frontend JS for edit/delete toggles
