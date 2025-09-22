@@ -14,8 +14,6 @@
 */
 
 const jwt = require('jsonwebtoken');
-const fs = require('fs');
-const path = require('path');
 
 // // const publicKey = fs.readFileSync('./public.key', 'utf8');
 // const publicKey = fs.readFileSync(path.resolve(__dirname, '..', 'public.key'), 'utf8');

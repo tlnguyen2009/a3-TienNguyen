@@ -2,7 +2,6 @@ const router = require("express").Router();
 const User = require("../models/User");
 const CryptoJS = require("crypto-js");
 const jwt = require('jsonwebtoken');
-const fs = require('fs');
 
 // Load RSA private key once
 // const privateKey = fs.readFileSync('./private.key', 'utf8');
