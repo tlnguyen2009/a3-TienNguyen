@@ -1,13 +1,19 @@
 {
-  "name": "a3-tiennguyen",
+  "name": "cockroach-squish-game",
   "version": "1.0.0",
-  "description": "Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template\r ===",
-  "main": "server.js",
+  "description": "Clicking to kill the cockroach",
+  "author": "Tien Nguyen",
+  "main": "server.improved.js",
   "scripts": {
-    "start": "node --env-file=.env server.js"
+    "start": "node server.improved.js"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "jsonwebtoken": "^9.0.2",
+    "mime": "^2.6.0",
+    "mongoose": "^8.18.1"
   }
 }

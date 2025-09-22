@@ -138,13 +138,18 @@ Include a very brief summary of your project here. Images are encouraged, along 
 File structure:
 
 a3-TienNguyen/
-├─ package.json
-├─ server.js             # Express server
-├─ public/               # All the "frontend"
-│  ├─ index.html         # Posts page (composer + feed)
-│  ├─ profile.html       # Profile page
-│  ├─ login.html         # Login page
+├─ server.js             # Entry point (sets up Express, connects to Mongo)
+├─ models/
+│  ├─ User.js            # User schema/model
+│  └─ Post.js            # Post schema/model
+├─ routes/
+│  ├─ posts.js           # Express routes for posts
+│  └─ users.js           # (later) login/register/profile
+├─ public/
+│  ├─ index.html         # Posts page
+│  ├─ profile.html
+│  ├─ login.html
 │  ├─ css/
-│  │  └─ style.css       # Your custom styles
+│  │  └─ style.css       # custom styles
 │  └─ js/
 │     └─ posts.js        # Frontend JS for edit/delete toggles

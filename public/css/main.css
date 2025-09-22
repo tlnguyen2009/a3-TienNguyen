@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:black;
+  color:white;
+  margin: 0;
+  padding-top: 60px; /* Add padding to the top to make space for the fixed navbar. This must match the height of .nav-bar */
+}
+
+.nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /*This must match with the padding-top in the body*/
+  z-index: 100; /*Then, make sure it's on top of everything*/
+  display: flex;
+  align-items: center;
+  padding: 0 2rem; /* Add some padding for the <a> links */
+  gap: 1.5rem; /*Add some gap between <a> links*/
+}
+
+.nav-bar > button {
+  font-size: medium;
+  height: 30px;
+  width: 90px;
+  background-color: antiquewhite;
+}
+
+.save-button {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+/* when save-button is disable */
+.save-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.play-button {
+  width: 100px;
+  height: 50px;
+  background-color: greenyellow;
+  font-weight: bolder;
+  font-size: larg;
+}
+
+input {
+  height: 30px;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px); /* 100% of viewport height MINUS navbar height */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.last-section {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.game-section {
+  display: none;
+  flex-direction: column;
+}
+
+.ranking-section {
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.replay-button {
+  margin-bottom: 10rem;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(235, 235, 70);
+}
+
+.replay-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+button {
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); 
+}
+
+.instruction {
+  margin-bottom: 2rem;
+  width: 40rem;
+}
+
+.instruction > h2 {
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.time-and-scores{
+  display: flex;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.decor {
+  font-size: large;
+}
+
+.score-board, .count-down {
+  display: flex;
+  gap: 0.75rem;
+}
+
+#cockroach {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.1s ease-out;
+}
+
+#cockroach:active {
+  /*"squish" effect when clicked */
+  transform: scale(0.95);
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #3a3a3a;
+}
