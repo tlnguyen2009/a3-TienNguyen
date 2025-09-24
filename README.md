@@ -37,5 +37,7 @@ password: 12345
 username: tester2
 password: 12345
 
-2) I thought I could use Vercel but it turns out they do not support backend and caused a lot of issues. Render seems like still a good choice to me so far.
+2) I deployed it successfully on Vercel. And here is the link: squish-the-cockroach.vercel.app
+
+3) I get 100% for all tests requirement on PageSpeed (Google lighthouse)
 
