@@ -1,73 +1,73 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>CS4241 Assignment 2</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <title>CS4241 Assignment 2</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Squish as many cockroaches as you can in 10 seconds! Play, save your score under your account, and view your personal ranking table." />
+      <script src="js/main.js"></script>
+      <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="nav-bar">
-      <button class="nav-back">Back</button>
-      <button class="nav-ranking">Ranking</button>
-    </div>
-
-    <div class="first-section screen">
-      <div class="instruction">
-        <h2> Let's see how many cockroaches you can squish in 10 seconds! Use your mouse to <span style="color: red;">click</span> and squish them. </h2>
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="nav-bar">
+        <button class="nav-back">Back</button>
+        <button class="nav-ranking">Ranking</button>
       </div>
-      <button class="play-button">PLAY</button>
-    </div>
-    
-    <div class="game-section screen">
-      <!-- <button class="button-points">CLICK TO GET POINTS</button> -->
-      <img 
-        id="cockroach" 
-        src="./Assets/normal_coackroach.png" 
-        alt="Clickable Cockroach"
-      >
-      <div class="time-and-scores">
-        <div class="count-down">
-          <div class="decor">Time (s):</div>
-          <div class="clock decor">60</div>
+
+      <div class="first-section screen">
+        <div class="instruction">
+          <h2> Let's see how many cockroaches you can squish in 10 seconds! Use your mouse to <span style="color: red;">click</span> and squish them. </h2>
         </div>
-        <div class="score-board">
-          <div class="decor">SCORES:</div>
-          <div class="score decor">0</div>
+        <button class="play-button">PLAY</button>
+      </div>
+      
+      <div class="game-section screen">
+        <!-- <button class="button-points">CLICK TO GET POINTS</button> -->
+        <img 
+          id="cockroach" 
+          src="./Assets/normal_coackroach.png" 
+          alt="Clickable Cockroach"
+        >
+        <div class="time-and-scores">
+          <div class="count-down">
+            <div class="decor">Time (s):</div>
+            <div class="clock decor">60</div>
+          </div>
+          <div class="score-board">
+            <div class="decor">SCORES:</div>
+            <div class="score decor">0</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="last-section screen">
-      <button class="replay-button">REPLAY</button>
-      <form>
-        <div>SCORES:</div>
-        <div class="score">0</div>
-        <input type="text" id="yourname" placeholder="type your name here">
-        <button class="save-button">Save Score</button>
-      </form>
-    </div>
+      <div class="last-section screen">
+        <button class="replay-button">REPLAY</button>
+        <form>
+          <div>SCORES:</div>
+          <div class="score">0</div>
+          <input type="text" id="yourname" placeholder="type your name here">
+          <button class="save-button">Save Score</button>
+        </form>
+      </div>
 
-    <div class="ranking-section screen">
-      <h1>Score Board</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Score</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="scoreboard-body"></tbody>
-      </table>
-    </div>
-  </body>
-</html>
+      <div class="ranking-section screen">
+        <h1>Score Board</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="scoreboard-body"></tbody>
+        </table>
+      </div>
+    </body>
+  </html>
