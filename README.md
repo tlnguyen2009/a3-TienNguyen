@@ -7,7 +7,7 @@ You just need to follow instruction/button on screen to play this game. You clic
 
 - Goal of this application is for my self studying about web technologies. In the other hand, it's for other people to enjoy clicking and seek simple relaxation.
 
-- The most challeng I face is design the routes and what data to save/ pass over the paths. The next challenge will be OAuthication and how to lead the user to a login page. The last challenge is how to save data for the moment of before and after user login. 
+- The most challenge I face is design the routes and what data to save/ pass over the paths. The next challenge will be OAuthication and how to lead the user to a login page. The last challenge is how to save data for the moment of before and after user login. 
 
 - I choose username/password login as an authentication because it seems easier to me. And I also use JWT as an authorization.
 
@@ -26,6 +26,13 @@ You just need to follow instruction/button on screen to play this game. You clic
 
   + optionalAuth (custom): tries to verify the JWT. If it’s missing/invalid, it just continues without req.user (used on /ranking so unauthenticated requests return an empty list instead of an error).
 
+## Baseline requirements
+I finish all of the requirements here
++ Use Express.js for server side
++ After playing the game, you will be required to logged in to save your score, after that, every turn you play the score will be saved to your account. I provide 2 different accounts so you can test with another account to see that the turns are saved for each individual account.
++ I allow user to modify their name and delete and it will reflect the changes in the database (mongodb).
++ I used MongoDB for database.
++ I used CSS tailwind for designing log-in page.
 
 ## Acheivements
 ***Technical***
